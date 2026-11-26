@@ -1,0 +1,35 @@
+# Python & Virtualenv
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+backend/.venv/
+.venv/
+
+# Local SQLite databases & generated runtime files (never overwrite or reset production DB)
+*.db
+*.db-shm
+*.db-wal
+backend/output/*.pdf
+backend/uploads/*
+!backend/output/.gitkeep
+!backend/uploads/.gitkeep
+
+# Environment secrets
+.env
+.env.local
+.env.production
+backend/.env
+frontend/.env
+frontend/.env.local
+frontend/.env.production
+
+# Node / Frontend build artifacts
+frontend/node_modules/
+frontend/dist/
+frontend/tsconfig.tsbuildinfo
+
+# OS / Editor
+.DS_Store
+.vscode/
+.idea/
